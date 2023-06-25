@@ -185,7 +185,7 @@ body{
 .menu-tel-item {
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.11;
+    line-height: 1.54;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--accent-color);
@@ -220,7 +220,7 @@ body{
 /* HERO */
 .hero {
     background-color: var(--dark-bg-color);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),  url(../images/people-office-1.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),  url(../images/hero-bg-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -228,10 +228,18 @@ body{
     padding: 112px 54px;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),  url(../images/hero-bg-mob-2x.jpg);
+  }
+}
+
 .hero-title {
     font-weight: 700;
     font-size: 32px;
-    line-height: 1.11;
+    line-height: 1.25;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--hero-text-color);
@@ -889,11 +897,13 @@ body{
 
     .menu-tel-item {
         font-size: 36px;
+        line-height: 1.11;
     }
 
     /* hero */
     .hero-title {
         font-size: 36px;
+        line-height: 1.11;
     }
 
     /* footer */
@@ -1005,10 +1015,19 @@ body{
 
 
     /* hero */
-    /* .hero {
-    padding-left: 136px;
-    padding-right: 136px;
-    } */
+    .hero {
+    /* padding-left: 136px;
+    padding-right: 136px; */
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tab.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),  url(../images/hero-bg-tab-2x.jpg);
+  }
+}
 
     .hero-title {
         font-size: 56px;
@@ -1129,7 +1148,16 @@ body{
         max-width: 1440px;
         padding-top: 188px;
         padding-bottom: 188px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1.jpg);
     }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),  url(../images/people-office-2x.jpg);
+  }
+}
 
     .hero-title {
         margin-bottom: 48px;
